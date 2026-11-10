@@ -24,7 +24,7 @@
       <tbody>
         {% for servicio in servicios %}
         <tr class="border-t border-slate-200">
-          <td class="px-4 py-2"><a href="{% url 'detalle_servicio' servicio.pk %}" class="text-blue-600 underline">{{ servicio.titulo }}</a></td>
+          <td class="px-4 py-2">{{ servicio.titulo }}</td>
           <td class="px-4 py-2">${{ servicio.precio }}</td>
           <td class="px-4 py-2 whitespace-nowrap">
             <a href="{% url 'editar_servicio' servicio.pk %}" class="text-blue-600 underline">Editar</a>
